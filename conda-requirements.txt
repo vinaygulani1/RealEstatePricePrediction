@@ -1,5 +1,4 @@
 scipy
 numpy
-moves
 six
 cvxopt
