@@ -1,7 +1,2 @@
 mpld3==0.2
 flask==0.10.1
-gunicorn==19.3.0
-idna==2.0
-ipaddress==1.0.15
-Scrapy==1.0.3
-selenium==2.46.0
