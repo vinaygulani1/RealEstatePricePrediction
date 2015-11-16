@@ -164,7 +164,6 @@ def remove_missing_data(pX_train, pX_test, pY_train, pY_test, feature_to_impute)
 	pY_train: price columns data
 	pY_test: test condition to be considered as empty (ex None)
 	feature_to_impute: the featrue to impute on the missing data.
-	
 	"""
 	X_train =  np.copy(pX_train)
 	X_test = np.copy(pX_test)

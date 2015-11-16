@@ -90,5 +90,5 @@ def get_linear_regression_plot():
 if __name__=='__main__':
 	#get_knn_plot()
 	#get_lasso_plot()
-	#get_linear_regression_plot()
-	get_predictor_plot()
+	get_linear_regression_plot()
+	#get_predictor_plot()
