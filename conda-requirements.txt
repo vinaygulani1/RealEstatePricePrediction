@@ -2,7 +2,6 @@ scipy
 numpy
 six
 matplotlib
-mpld3
 BeautifulSoup
 beautifulsoup4
 cffi
@@ -22,6 +21,7 @@ idna
 itsdangerous
 jinja2
 lxml
+mpld3
 markupsafe
 ordereddict
 paramiko
