@@ -1,2 +1,1 @@
-pip install mpld3
-web: python app.py
+web: gunicorn app:app --log-file=-
