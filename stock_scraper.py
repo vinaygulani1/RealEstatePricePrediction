@@ -35,7 +35,9 @@ def get_missing_data_plot():
     ax.set_xticks(indices+width/2.0)
     ax.set_xticklabels(('num_bath', 'num_bed', 'year_built', 'living_area', 'num_room'))
 #     plt.show()
+    print "Hello Vinay"
     html_text = mpld3.fig_to_html(fig)
+    print "This is HTML TEXT content ", html_text
     return html_text
 
     
