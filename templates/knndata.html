@@ -1,0 +1,17 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<div id="chartpanel">Panel Content</div>
+<script src={{ url_for('static', filename='./bower_components/jquery/dist/jquery.min.js') }}></script>
+<script type="text/javascript" src={{ url_for('static', filename='highcharts/highcharts.js') }}></script>
+<script type="text/javascript" src={{ url_for('static', filename='js/chart.js') }}></script>
+
+<script>
+
+window.onload = function() {
+	var categories = {{ categories|safe}}
+	var series_data_miss = {{series_data_miss|safe}}
+	var series_data_replaced = {{ series_data_replaced|safe}}
+	var series_data_estimated = {{series_data_estimated|safe}}
+	createLineChart('chartpanel',categories,series_data_miss,series_data_replaced,series_data_estimated);
+	}
+</script>

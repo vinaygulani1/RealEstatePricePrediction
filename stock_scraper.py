@@ -35,13 +35,14 @@ def get_missing_data_plot():
     ax.set_xticks(indices+width/2.0)
     ax.set_xticklabels(('num_bath', 'num_bed', 'year_built', 'living_area', 'num_room'))
 #     plt.show()
-    print "Hello Vinay"
+#    print "Hello Vinay"
     html_text = mpld3.fig_to_html(fig)
-    print "This is HTML TEXT content ", html_text
+#    print "This is HTML TEXT content ", html_text
     return html_text
 
     
 def get_knn_plot():
+    print "entering get_knn_plot()"
     xs = [1, 5, 10, 25, 50]
     ys_remove = [53237.9329566,45209.7125948,45960.5608356,48585.3941053,52868.8219684]
     ys_mean = [78259.1829037,68398.7744757,68553.5061504,71210.8411428,73907.104319]
@@ -53,7 +54,8 @@ def get_knn_plot():
     plt.xlabel('k')
     plt.ylabel('Mean Absolute Error ($)')
     plt.legend(loc=1)
-#     plt.show()
+    #plt.show()
+    print "fig = {0}".format(fig)
     html_text = mpld3.fig_to_html(fig)
     return html_text
     
